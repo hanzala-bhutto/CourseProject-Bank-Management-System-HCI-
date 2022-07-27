@@ -14,7 +14,7 @@ namespace Bank_Management_System
     public partial class EmployeePortal : Form
     {
 
-        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Hanzala\Desktop\HCIProject\Bank_Management_System\Bank_Management_System\DataBase\BankingDB.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection Con = new SqlConnection(@System.Configuration.ConfigurationManager.ConnectionStrings["DataBaseString"].ConnectionString);
 
         public EmployeePortal()
         {
